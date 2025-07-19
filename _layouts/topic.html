@@ -1,0 +1,53 @@
+---
+layout: default
+---
+
+<article class="topic-page">
+  <header class="topic-header">
+    <h1>{{ page.title }}</h1>
+    {% if page.description %}
+      <p class="topic-description">{{ page.description }}</p>
+    {% endif %}
+  </header>
+
+  <div class="topic-content">
+    {{ content }}
+  </div>
+
+  {% if page.papers %}
+  <section class="papers-section">
+    <h2>Research Papers</h2>
+    <div class="papers-list">
+      {% for paper_path in page.papers %}
+        {% assign paper = site.papers | where: "slug", paper_path | first %}
+        {% if paper %}
+        <div class="paper-card">
+          <h3><a href="{{ paper.url | relative_url }}">{{ paper.title }}</a></h3>
+          {% if paper.authors %}
+            <p class="paper-authors">By: {{ paper.authors | join: ", " }}</p>
+          {% endif %}
+          {% if paper.year %}
+            <p class="paper-year">{{ paper.year }}</p>
+          {% endif %}
+          {% if paper.excerpt %}
+            <p class="paper-excerpt">{{ paper.excerpt }}</p>
+          {% endif %}
+          <div class="paper-meta">
+            {% if paper.tags %}
+              {% for tag in paper.tags %}
+                <span class="tag">{{ tag }}</span>
+              {% endfor %}
+            {% endif %}
+          </div>
+        </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </section>
+  {% endif %}
+
+  <nav class="topic-nav">
+    <a href="{{ '/' | relative_url }}" class="back-link">← Back to Home</a>
+    <a href="{{ '/topics/' | relative_url }}" class="all-topics">All Topics</a>
+  </nav>
+</article> 

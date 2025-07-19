@@ -1,0 +1,50 @@
+# Site settings
+title: Research Notes
+description: "A comprehensive collection of research papers and academic notes"
+author: Your Name
+email: your.email@example.com
+url: "https://yourusername.github.io"
+baseurl: "/ResearchNotes"
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# Collections for organizing research
+collections:
+  topics:
+    output: true
+    permalink: /:collection/:name/
+  papers:
+    output: true
+    permalink: /:collection/:path/
+
+# Navigation
+navigation:
+  - title: Home
+    url: /
+  - title: All Topics
+    url: /topics/
+  - title: About
+    url: /about/
+
+# Exclude files from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/
+  - .bundle/
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - README.md
+
+# Sass settings
+sass:
+  style: compressed 
