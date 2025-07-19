@@ -5,7 +5,7 @@ title: Research Notes
 
 # Welcome to My Research Notes
 
-This website contains my collection of research papers, notes, and academic insights organized by topic. Each topic contains detailed notes on various research papers and studies.
+Just a fun way to organize my notes and stay in touch with the latest developments !! 
 
 ## Research Topics
 

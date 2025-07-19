@@ -216,6 +216,51 @@ body {
   margin: 0 auto;
 }
 
+// Image styles for papers
+.paper-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+  margin: 1rem 0;
+  display: block;
+}
+
+.image-container {
+  text-align: center;
+  margin: 2rem 0;
+  
+  .image-caption {
+    font-style: italic;
+    color: var(--text-light);
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+  }
+}
+
+.image-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  margin: 1.5rem 0;
+  
+  .gallery-item {
+    text-align: center;
+    
+    img {
+      max-width: 100%;
+      border-radius: var(--border-radius);
+      box-shadow: var(--shadow);
+    }
+    
+    .caption {
+      font-size: 0.8rem;
+      color: var(--text-light);
+      margin-top: 0.5rem;
+    }
+  }
+}
+
 .paper-header {
   margin-bottom: 2rem;
   padding-bottom: 1rem;

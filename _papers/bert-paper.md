@@ -39,6 +39,13 @@ Unlike previous models that were either left-to-right or combined left-to-right 
 - Uses WordPiece tokenization with 30,000 vocabulary
 - Maximum sequence length of 512 tokens
 
+<div class="image-container">
+  <img src="{{ '/assets/images/bert/bert-architecture.png' | relative_url }}" 
+       alt="BERT Architecture" 
+       class="paper-image">
+  <p class="image-caption">Figure 2: BERT bidirectional training approach</p>
+</div>
+
 ## Results
 
 BERT achieved new state-of-the-art results on:
