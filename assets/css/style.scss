@@ -222,7 +222,7 @@ body {
   height: auto;
   border-radius: var(--border-radius);
   box-shadow: var(--shadow);
-  margin: 1rem 0;
+  margin: 1rem auto;
   display: block;
 }
 
@@ -323,6 +323,26 @@ body {
     padding: 0.125rem 0.25rem;
     border-radius: 4px;
     font-family: 'Consolas', 'Monaco', monospace;
+  }
+  
+  // Auto-center all images in paper content
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 1rem auto;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+  }
+  
+  // Style for markdown image captions (when followed by italic text)
+  p > em {
+    display: block;
+    text-align: center;
+    font-style: italic;
+    color: var(--text-light);
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
   }
 }
 
