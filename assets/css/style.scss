@@ -325,25 +325,25 @@ body {
     font-family: 'Consolas', 'Monaco', monospace;
   }
   
-  // Auto-center all images in paper content
-  img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 1rem auto;
-    border-radius: var(--border-radius);
-    box-shadow: var(--shadow);
-  }
+//   // Auto-center all images in paper content
+//   img {
+//     max-width: 100%;
+//     height: auto;
+//     display: block;
+//     margin: 1rem auto;
+//     border-radius: var(--border-radius);
+//     box-shadow: var(--shadow);
+//   }
   
-  // Style for markdown image captions (when followed by italic text)
-  p > em {
-    display: block;
-    text-align: center;
-    font-style: italic;
-    color: var(--text-light);
-    font-size: 0.9rem;
-    margin-top: 0.5rem;
-  }
+//   // Style for markdown image captions (when followed by italic text)
+//   p > em {
+//     display: block;
+//     text-align: center;
+//     font-style: italic;
+//     color: var(--text-light);
+//     font-size: 0.9rem;
+//     margin-top: 0.5rem;
+//   }
 }
 
 // Tags
