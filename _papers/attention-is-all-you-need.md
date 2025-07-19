@@ -22,6 +22,13 @@ This groundbreaking paper introduces the Transformer architecture, which has bec
 
 ## Architecture Details
 
+<div class="image-container">
+  <img src="https://via.placeholder.com/500x600/3498db/ffffff?text=Transformer+Architecture" 
+       alt="Transformer Architecture" 
+       class="paper-image">
+  <p class="image-caption">Figure 1: The Transformer model architecture</p>
+</div>
+
 ### Multi-Head Attention
 The model uses multiple attention heads to focus on different representation subspaces:
 - **Scaled Dot-Product Attention**: Computes attention weights using query, key, and value vectors

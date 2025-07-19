@@ -40,7 +40,7 @@ Unlike previous models that were either left-to-right or combined left-to-right 
 - Maximum sequence length of 512 tokens
 
 <div class="image-container">
-  <img src="{{ '/assets/images/bert/bert-architecture.png' | relative_url }}" 
+  <img src="{{ '/assets/images/bert/bert-architecture.png' }}" 
        alt="BERT Architecture" 
        class="paper-image">
   <p class="image-caption">Figure 2: BERT bidirectional training approach</p>
