@@ -9,7 +9,7 @@ body {
   background-color: #fff;
   margin: 0;
   padding: 20px;
-  max-width: 800px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -73,6 +73,49 @@ hr {
   padding: 0;
 }
 
+// Auto image sizing - responsive images
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+// Image container styling for papers
+.image-container {
+  margin: 2em 0;
+  text-align: center;
+  
+  img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    margin: 0 auto;
+  }
+}
+
+// Specific styling for paper images
+.paper-image {
+  max-width: 100%;
+  height: auto;
+  margin: 1em auto;
+  display: block;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+// Image caption styling
+.image-caption {
+  font-style: italic;
+  color: #666;
+  font-size: 0.9em;
+  margin-top: 0.5em;
+  margin-bottom: 0;
+  text-align: center;
+}
+
 // Ensure minimal styling for paper content
 .paper-content {
   line-height: 1.6;
@@ -106,6 +149,17 @@ hr {
     border-radius: 3px;
     font-family: 'Courier New', monospace;
   }
+  
+  // Images within paper content
+  img {
+    max-width: 100%;
+    height: auto;
+    margin: 1em auto;
+    display: block;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  }
 }
 
 // Simple responsive behavior
@@ -120,5 +174,17 @@ hr {
   
   h2 {
     font-size: 1.2em;
+  }
+  
+  // Enhanced mobile image sizing
+  .image-container,
+  .paper-image,
+  .paper-content img {
+    margin: 1em 0;
+  }
+  
+  .image-caption {
+    font-size: 0.85em;
+    padding: 0 1em;
   }
 } 

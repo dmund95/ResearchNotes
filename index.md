@@ -5,25 +5,57 @@ title: Research Notes
 
 # Research Notes
 
-# Paper notes
-
-This repository contains my paper reading notes on deep learning and machine learning. A minimalistic webpage generated with GitHub Pages.
+This repository/wesbite contains my paper reading notes on research in AI. It is inspired by [Patrick Langechuan Liu]({{https://patrick-llgc.github.io/Learning-Deep-Learning/}})
 
 ## About me
 
-My name is Divi Mund. I'm documenting my journey through research papers in machine learning, deep learning, and computer vision.
+My name is Divi Mund. I'm documenting my journey through research papers in computer vision / Recommender Systems.
 
-## 2023-12 (1)
+## 2025-07
 
-* Qwen-VL: A Versatile Vision-Language Model for Understanding, Localization, Text Reading, and Beyond [Notes]({{ site.baseurl }}/papers/Qwen-VL/) CVPR 2023 [Alibaba Group]
+* AlphaDrive [Notes]({{ site.baseurl }}/papers/alphadrive/) <code>[arXiv] [2025]</code>
 
-## 2018-11 (1)
+* Qwen2-VL [Notes]({{ site.baseurl }}/papers/qwen2-vl/) <code>[arXiv] [2024]</code>
 
-* BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding [Notes]({{ site.baseurl }}/papers/bert-paper/) NAACL 2019 [Google Research]
+* DINOv2 [Notes]({{ site.baseurl }}/papers/dinov2/) <code>[arXiv] [2024]</code>
 
-## 2017-06 (1)
+* GroundingDINO [Notes]({{ site.baseurl }}/papers/grounding-dino/) <code>[arXiv] [2024]</code>
 
-* Attention Is All You Need [Notes]({{ site.baseurl }}/papers/attention-is-all-you-need/) NIPS 2017 [Google Research, University of Toronto]
+* LLaMa Adapter [Notes]({{ site.baseurl }}/papers/llama-adapter/) <code>[arXiv] [2024]</code>
+
+* MobileCLIP [Notes]({{ site.baseurl }}/papers/mobileclip/) <code>[CVPR] [2024]</code>
+
+* Qwen-VL [Notes]({{ site.baseurl }}/papers/qwen-vl/) <code>[2023]</code>
+
+* LLaVa [Notes]({{ site.baseurl }}/papers/llava/) <code>[NeurIPS] [2023]</code>
+
+* Segment Anything [Notes]({{ site.baseurl }}/papers/segment-anything/) <code>[ICCV] [2023]</code>
+
+* MobileOne [Notes]({{ site.baseurl }}/papers/mobileone/) <code>[CVPR] [2023]</code>
+
+* FastViT [Notes]({{ site.baseurl }}/papers/fastvit/) <code>[ICCV] [2023]</code>
+
+* Flamingo [Notes]({{ site.baseurl }}/papers/flamingo/) <code>[NeurIPS] [2022]</code>
+
+* CLIPSeg [Notes]({{ site.baseurl }}/papers/clipseg/) <code>[CVPR] [2022]</code>
+
+* Mask2Former [Notes]({{ site.baseurl }}/papers/mask2former/) <code>[2022]</code>
+
+* MetaFormer [Notes]({{ site.baseurl }}/papers/metaformer/) <code>[CVPR] [2022]</code>
+
+* DINO [Notes]({{ site.baseurl }}/papers/dino/) <code>[ICCV] [2021]</code>
+
+* Florence [Notes]({{ site.baseurl }}/papers/florence/) <code>[arXiv] [2021]</code>
+
+* Swin Transformer [Notes]({{ site.baseurl }}/papers/swin-transformer/) <code>[ICCV] [2021]</code>
+
+* MaskFormer [Notes]({{ site.baseurl }}/papers/maskformer/) <code>[NeurIPS] [2021]</code>
+
+* ViT Vision-Transformer [Notes]({{ site.baseurl }}/papers/vit/) <code>[ICLR] [2021]</code>
+
+* DETR [Notes]({{ site.baseurl }}/papers/detr/) <code>[ECCV] [2020]</code>
+
+* Wide & Deep networks [Notes]({{ site.baseurl }}/papers/wide-deep-networks/) <code>[2016]</code>
 
 ---
 

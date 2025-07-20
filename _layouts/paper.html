@@ -16,6 +16,10 @@ layout: default
 <p><strong>Published in:</strong> {{ page.journal }}</p>
 {% endif %}
 
+{% if page.paper %}
+<p><strong>Paper:</strong> <a href="{{ page.paper }}" target="_blank">Link</a></p>
+{% endif %}
+
 <hr>
 
 <div class="paper-content">
