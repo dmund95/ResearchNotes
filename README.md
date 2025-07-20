@@ -116,9 +116,9 @@ To test your site locally:
 bundle install
 
 # Serve the site locally
-bundle exec jekyll serve
+rbenv rehash && bundle exec jekyll serve
 
-# View at http://localhost:4000
+# View at http://127.0.0.1:4000/ResearchNotes/
 ```
 
 ### Dependencies
@@ -183,3 +183,55 @@ This template is open source and available under the MIT License.
 ---
 
 **Happy researching!** 📖✨ 
+
+## 🏆 **Recommended: Use a Ruby Version Manager**
+
+The best practice is to use **rbenv** (or **rvm**) to manage Ruby versions:
+
+### Install rbenv (macOS):
+```bash
+# Install rbenv via Homebrew
+brew install rbenv ruby-build
+
+# Add to your shell profile (~/.zshrc)
+echo 'eval "$(rbenv init - zsh)"' >> ~/.zshrc
+source ~/.zshrc
+
+# Install a Ruby version (Jekyll works well with 3.1.x)
+rbenv install 3.1.4
+rbenv local 3.1.4  # Set for this project only
+```
+
+Then run:
+```bash
+bundle install
+bundle exec jekyll serve
+```
+
+## 🐳 **Alternative: Docker (Complete Isolation)**
+
+If you want complete isolation, use Docker:
+
+```bash
+# Run Jekyll in a container
+docker run --rm -it \
+  -v "$PWD":/srv/jekyll \
+  -p 4000:4000 \
+  jekyll/jekyll:4 \
+  bash -c "bundle install && bundle exec jekyll serve --host 0.0.0.0"
+```
+
+## ⚠️ **System Ruby + Bundler (Minimal Protection)**
+
+If you just use system Ruby with Bundler:
+- Bundler will install gems in your user directory (not system-wide)
+- Some isolation, but less clean than rbenv
+- Generally safe but not as organized
+
+## **What I'd Recommend:**
+
+1. **Use rbenv** - It's the Ruby community standard and gives you clean version isolation
+2. Your `Gemfile` uses GitHub Pages gems, which are well-maintained and safe
+3. Bundler already provides gem-level isolation even without rbenv
+
+Would you like me to help you set up rbenv, or would you prefer to try one of the other approaches? 

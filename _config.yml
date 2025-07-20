@@ -1,6 +1,6 @@
 # Site settings
 title: Research Notes
-description: "A comprehensive collection of research papers and academic notes"
+description: "Paper reading notes on deep learning and machine learning"
 author: Divi Mund
 email: divimund95@gmail.com
 url: "https://dmund95.github.io"
@@ -9,7 +9,6 @@ baseurl: "/ResearchNotes"
 # Build settings
 markdown: kramdown
 highlighter: rouge
-theme: minima
 plugins:
   - jekyll-feed
   - jekyll-sitemap
@@ -17,21 +16,9 @@ plugins:
 
 # Collections for organizing research
 collections:
-  topics:
-    output: true
-    permalink: /:collection/:name/
   papers:
     output: true
     permalink: /:collection/:path/
-
-# Navigation
-navigation:
-  - title: Home
-    url: /
-  - title: All Topics
-    url: /topics/
-  - title: About
-    url: /about/
 
 # Exclude files from processing
 exclude:

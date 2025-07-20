@@ -6,7 +6,6 @@ year: 2018
 journal: "NAACL 2019"
 doi: "10.18653/v1/N19-1423"
 topic: "machine-learning"
-tags: ["bert", "transformers", "pre-training", "nlp", "bidirectional"]
 key_points:
   - "Introduces bidirectional training of Transformers using masked language modeling"
   - "Achieves state-of-the-art results on 11 NLP tasks"
@@ -40,7 +39,7 @@ Unlike previous models that were either left-to-right or combined left-to-right 
 - Maximum sequence length of 512 tokens
 
 <div class="image-container">
-  <img src="{{ '/assets/images/bert/bert-architecture.png' }}" 
+  <img src="{{ '/assets/images/bert/bert-architecture.png' | relative_url }}" 
        alt="BERT Architecture" 
        class="paper-image">
   <p class="image-caption">Figure 2: BERT bidirectional training approach</p>

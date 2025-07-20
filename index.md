@@ -3,29 +3,27 @@ layout: default
 title: Research Notes
 ---
 
-# Welcome to My Research Notes
+# Research Notes
 
-Just a fun way to organize my notes and stay in touch with the latest developments !! 
+# Paper notes
 
-## Research Topics
+This repository contains my paper reading notes on deep learning and machine learning. A minimalistic webpage generated with GitHub Pages.
 
-<div class="topics-grid">
-  {% for topic in site.topics %}
-  <div class="topic-card">
-    <h3><a href="{{ topic.url | relative_url }}">{{ topic.title }}</a></h3>
-    <p>{{ topic.description }}</p>
-    <div class="topic-meta">
-      <span class="paper-count">{{ topic.papers | size | default: 0 }} papers</span>
-    </div>
-  </div>
-  {% endfor %}
-</div>
+## About me
 
-## Quick Navigation
+My name is Divi Mund. I'm documenting my journey through research papers in machine learning, deep learning, and computer vision.
 
-- [Browse All Topics](/topics/)
-- [Recently Added Papers](/recent/)
-- [About This Site](/about/)
+## 2023-12 (1)
+
+* Qwen-VL: A Versatile Vision-Language Model for Understanding, Localization, Text Reading, and Beyond [Notes]({{ site.baseurl }}/papers/Qwen-VL/) CVPR 2023 [Alibaba Group]
+
+## 2018-11 (1)
+
+* BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding [Notes]({{ site.baseurl }}/papers/bert-paper/) NAACL 2019 [Google Research]
+
+## 2017-06 (1)
+
+* Attention Is All You Need [Notes]({{ site.baseurl }}/papers/attention-is-all-you-need/) NIPS 2017 [Google Research, University of Toronto]
 
 ---
 
