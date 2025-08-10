@@ -17,3 +17,8 @@ Introduces novel transformer based 2D back for image processing. Unlike ViT, the
 2. However, since each patch will only attend to a fixed set of patches this limits the representation capacity of the model. To address this, strided window partition is used for the next layer. This is similar to DSVT architecture. This allows mixing of features across window partition.
 3. To inject position information in self attention, the papers uses relative position bias. Instead of absolute position encoding appended to key / query features, learnt relative position scalar values are added to the attention matrix. 
 4. Features are downsampled as the network goes deeper by merging patches. This ensures that at each stage, the network learns feature representation at different scales. Similar to ResNet. These features can be processed using FPN network for object detection or segmentation task. 
+
+<figure class="image-container">
+    <img src="{{ '/assets/images/swin.png' | relative_url }}" alt="Swin-Transformer overview" class="paper-image">
+    <figcaption class="image-caption">Swin-Transformer overview</figcaption>
+</figure>

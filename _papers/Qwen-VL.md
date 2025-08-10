@@ -20,3 +20,8 @@ One of the first open source multi modal foundation models
    1. Pre-training on weakly labeled web scraped text-image pairs. Qwen-LM is frozen in this phase. Total 1.4B samples for this stage and captioning task is used. Images are fed at 224x224 resolution
    2. Multi-task Pre-training on interleaved image/text data for other tasks likes grounding, OCR and referring etc. A total of 70M samples are used. The authors also increase the resolution to 448x448 to capture fine grained features for this task. The Image-text adapter ensures to always convert the visual feature to 256 fixed embeddings.
    3. Supervised-finetuning: Uses chat based data to give chat capabilities to the model (like chatGPT). ~350K samples at this point
+
+<figure class="image-container">
+    <img src="{{ '/assets/images/qwen-vl.png' | relative_url }}" alt="Training stages" class="paper-image">
+    <figcaption class="image-caption">Training stages overview</figcaption>
+</figure>

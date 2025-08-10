@@ -15,3 +15,8 @@ There are three key design choices.
 1. Introduces RepMixer module. However this is just a simple skip connection module. The novelty is using reparameterization trick at inference to avoid skip connection and reduce memory access cost
 2. Train time over-parameterization. This is similar to MobileOne architecture where multiple branches with different sized conv kernels are used at training and at inference are merged into a single conv layer.
 3. Since the paper avoids using self attention in all blocks (except last) which is a costly operation, to keep similar receptive field, large kernel sizes are used in early layers. 
+
+<figure class="image-container">
+    <img src="{{ '/assets/images/fastvit.png' | relative_url }}" alt="FastVIT architecture" class="paper-image">
+    <figcaption class="image-caption">FastVIT architecture</figcaption>
+</figure>

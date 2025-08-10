@@ -14,3 +14,8 @@ TokenMixer module is responsible for mixing token information in a transformer a
 This paper uses a very simple average pooling operation as the TokenMixer module. Idea is to pool nearby token features in K-sized sliding window.
 
 For some reason this simple token mixing strategy performs very competitively with attention based architecture. 
+
+<figure class="image-container">
+    <img src="{{ '/assets/images/metaformer.png' | relative_url }}" alt="Metaformer comparison" class="paper-image">
+    <figcaption class="image-caption">Metaformer comparison</figcaption>
+</figure>

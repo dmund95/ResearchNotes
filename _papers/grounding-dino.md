@@ -19,3 +19,8 @@ Model for open set object detection. Given an input text string, the model shoul
    1. The text and image features are passed through the feature enhancer module where cross attention between image-to-text and text-to-image features occur. 
    2. Since only a few of the image features are relevant to predict boxes and since these depend on text input, it makes sense to choose a few of the image features conditioned on text queries. This is done by a simple top-K selection from image queries whose dot product with text queries is highest.
    3. These top-K chosen queries then cross-attend to image features and text features. The output features are now responsible to predict the 2D boxes like in DETR. Hungarian loss is used to set matching order. Focal loss and GIOU loss is used for localization. Contrastive loss is used between image / text features where similar text embedding is forced closer to matching image embedding and farther from negative embeddings 
+
+<figure class="image-container">
+    <img src="{{ '/assets/images/groundingdino.png' | relative_url }}" alt="Grounding DINO framework" class="paper-image">
+    <figcaption class="image-caption">Grounding DINO framework</figcaption>
+</figure>

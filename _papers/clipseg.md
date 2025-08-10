@@ -24,3 +24,8 @@ To condition desired image, the model supports either text or image based prompt
 
 1. The results section seem a bit weak overall. For classes seen in during training, there are models which perform segmentation far better than CLIPSeg.
 2. Looks like the paper's strong point is that it has better performance on unseen classes due to its inherent ability to understand text because of CLIP pretraining. 
+
+<figure class="image-container">
+    <img src="{{ '/assets/images/clipseg.png' | relative_url }}" alt="CLIPSeg architecture" class="paper-image">
+    <figcaption class="image-caption">CLIPSeg architecture</figcaption>
+</figure>

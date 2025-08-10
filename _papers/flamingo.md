@@ -19,3 +19,13 @@ This is a foundation model that can take as input interleaved image / video + te
 4. To generate visual token, the authors train image encoder and freeze it. The image encoder is trained using contrastive learning. Authors train a separate stronger backbone based image encoder compared to CLIP and show it gives better performance.
 5. Since the image resolutions can be varied, authors use similar idea as DETR to generate fixed number of embeddings (64) to describe the visual context. Basically there are 64 learnable queries that attend to visual tokens and aggregate features from. 
 6. Surprisingly, training the LM layers lead to performance drop compared to freezing them. Paper claims this is because of catastrophic forgetting. However given the scale of the training data ~2B samples in total, not sure how this is justified. 
+
+<figure class="image-container">
+    <img src="{{ '/assets/images/flamingo1.png' | relative_url }}" alt="Flamingo architecture overview" class="paper-image">
+    <figcaption class="image-caption">Flamingo architecture overview</figcaption>
+</figure>
+
+<figure class="image-container">
+    <img src="{{ '/assets/images/flamingo2.png' | relative_url }}" alt="Gated attention layers" class="paper-image">
+    <figcaption class="image-caption">Gated attention layers</figcaption>
+</figure>

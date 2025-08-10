@@ -17,3 +17,8 @@ The paper proposes a method to unify semantic segmentation and instance segmenta
 2. Given N_gt < N ground truth masks and the associated instance class id, Hungarian matching is used  to find optimal matching. The matching function is sum of class cross entropy loss + binary mask loss
 3. Given the optimal matching, loss function is a sum of class cross entropy + binary mask loss (focal loss + dice loss)
 4. Uses Swin Transformer image encoder which generates feature map with 32 stride. This feature map is passed through pixel decoder (just FPN module) to upsample. Just like DETR, N learnable abstract queries attend to the encoded features. These queries contain global semantic information. To predict classes for masks, these query embeddings are passed through MLP -> softmax layer. To predict binary masks, pixel-wise dot product is taken with the output of pixel decoder. 
+
+<figure class="image-container">
+    <img src="{{ '/assets/images/maskformer.png' | relative_url }}" alt="MaskFormer overview" class="paper-image">
+    <figcaption class="image-caption">MaskFormer overview</figcaption>
+</figure>

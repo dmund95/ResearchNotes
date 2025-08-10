@@ -18,4 +18,9 @@ Foundation model for multimodal data: text, image, videos
 3. For videos the model might have to downsample it so as to limit the number of token to 16384
 4. The model is able to understand videos over 20 mins long which is impressive
 
+<figure class="image-container">
+    <img src="{{ '/assets/images/qwen2-vl.png' | relative_url }}" alt="Multimodal rotary position embedding" class="paper-image">
+    <figcaption class="image-caption">Multimodal rotary position embedding</figcaption>
+</figure>
+
 Overall nothing impressive. Seems very similar to other foundation models. Quite a lot of work is done getting huge amount of labeled data for various tasks like Visual question answering, image captions, and Agentic tasks. 

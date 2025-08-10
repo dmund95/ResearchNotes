@@ -17,6 +17,11 @@ This paper introduces a general purpose visual assistant model that can ingest b
 2. Once we have such dataset, it can be basically considered as a sequence of token (image, question,answer, question, answer) which can be trained by the general LLM auto-regressive loss
 3. CLIP image encoder is used and Vicuna text encoder is used. To align the visual features to text feature space, linear projection layer is learnt to transform image embedding.
 
+<figure class="image-container">
+    <img src="{{ '/assets/images/llava.png' | relative_url }}" alt="LLaVa model architecture" class="paper-image">
+    <figcaption class="image-caption">LLaVa model architecture</figcaption>
+</figure>
+
 ## Limitation
 
 1. The model can not handle interleaved images + text information. 

@@ -9,7 +9,7 @@ This repository/wesbite contains my paper reading notes on research in AI. It is
 
 ## About me
 
-My name is Divi Mund. I'm documenting my journey through research papers in computer vision / Recommender Systems.
+My name is Divyanshu Mund. I'm documenting my journey through research papers in computer vision / Recommender Systems.
 
 ## 2025-08
 

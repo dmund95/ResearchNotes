@@ -18,3 +18,8 @@ It's a form of parameter efficient finetuning technique. The idea is to take a p
 3. Since prompt embeddings are initialized randomly, gated attention is used similar to ideas from Flamingo and ControlNet. Idea is to inject a learnable tanh layer that initializes with zero (so that LLM attention layer does not attend to these prompt embeddings initially) 
 4. Simply put, the attention affinity matrix is divided into two parts, one with next token embedding attending to the previous tokens (usual LLM) and one attending to all newly introduced prompt embeddings. Softmax is taken over the two matrices independently to compute the final value feature for next token prediction. Softmax matrix over prompt embeddings is modulated by tanh gated logic. 
 5. Multi modal reasoning: The technique can also be used to condition on images. The idea is to use CLIP image encoder to get image embeddings and add these image features to the prompt embeddings to generate image conditioned prompt embeddings. These embeddings are then passed through the zero gated attention layers explained above. 
+
+<figure class="image-container">
+    <img src="{{ '/assets/images/llama_adapter.png' | relative_url }}" alt="Zero initialized attention" class="paper-image">
+    <figcaption class="image-caption">Zero initialized attention</figcaption>
+</figure>

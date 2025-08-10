@@ -22,3 +22,8 @@ The paper proposes an efficient network architecture.
    2. Branching over-parameterization: (Conv + BN) blocks in parallel connection. Overall the operation can be written as sum of Weight and bias terms. 
 6. In depth-wise convolution, a 3x3 depthwise conv is followed by a 1x1 channelwise conv. The authors introduce over-parameterization in both the blocks.
 7. The usual sequence of blocks is Conv-Relu-BN. The structure is changed to Conv-BN-Relu so as to enable re-parametrization trick 
+
+<figure class="image-container">
+    <img src="{{ '/assets/images/mobileone.png' | relative_url }}" alt="MobileOne reparametrization trick" class="paper-image">
+    <figcaption class="image-caption">MobileOne reparametrization trick</figcaption>
+</figure>

@@ -9,6 +9,11 @@ paper: https://arxiv.org/pdf/2112.01527
 
 ## Summary
 
+<figure class="image-container">
+    <img src="{{ '/assets/images/mask2former.png' | relative_url }}" alt="Mask2former overview" class="paper-image">
+    <figcaption class="image-caption">Mask2former overview</figcaption>
+</figure>
+
 Closely builds on top of MaskFormer architecture with 3 main changes
 
 1. High resolution feature attention: In MaskFormer, abstract queries attend to only the last feature map from image encoder. In Mask2Former, abstract queries are refined over various blocks with each block attending to a different resolution of the feature map from the pixel decoder. 

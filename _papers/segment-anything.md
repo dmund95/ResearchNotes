@@ -31,3 +31,8 @@ By supporting these types of query to get segmentation, the authors claim this c
       2. Point: The point embedding is basically sum of position embedding of physical point + learned point embedding 
       3. Box: 
    3. Mask decoder: Various attention modules to attend features across image + prompt embeddings 
+
+<figure class="image-container">
+    <img src="{{ '/assets/images/sam.png' | relative_url }}" alt="Mask Decoder in SAM" class="paper-image">
+    <figcaption class="image-caption">Mask Decoder in SAM</figcaption>
+</figure>
