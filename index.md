@@ -11,6 +11,10 @@ This repository/wesbite contains my paper reading notes on research in AI. It is
 
 My name is Divi Mund. I'm documenting my journey through research papers in computer vision / Recommender Systems.
 
+## 2025-08
+
+* Interformer [Notes]({{ site.baseurl }}/papers/interformer/) <code>[arXiv] [2025]</code>
+
 ## 2025-07
 
 * AlphaDrive [Notes]({{ site.baseurl }}/papers/alphadrive/) <code>[arXiv] [2025]</code>
