@@ -29,7 +29,7 @@ My name is Divyanshu Mund. I'm documenting my journey through research papers in
 
 * MobileCLIP [Notes]({{ site.baseurl }}/papers/mobileclip/) <code>[CVPR] [2024]</code>
 
-* Qwen-VL [Notes]({{ site.baseurl }}/papers/qwen-vl/) <code>[2023]</code>
+* Qwen-VL [Notes]({{ site.baseurl }}/papers/Qwen-VL/) <code>[2023]</code>
 
 * LLaVa [Notes]({{ site.baseurl }}/papers/llava/) <code>[NeurIPS] [2023]</code>
 
