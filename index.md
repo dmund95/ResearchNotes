@@ -15,8 +15,9 @@ My name is Divyanshu Mund. I'm documenting my journey through research papers in
 
 * Interformer [Notes]({{ site.baseurl }}/papers/interformer/) <code>[arXiv] [2025]</code>
 
-* PinFM [Notes]({{ site.baseurl }}/papers/PinFM/) <code>[arXiv] [2025]</code>
+* PinFM [Notes]({{ site.baseurl }}/papers/PinFM/) <code>[arXiv] [Pinterest] [2025]</code>
 
+* PinnerFormer [Notes]({{ site.baseurl }}/papers/PinnerFormer/) <code>[arXiv] [Pinterest] [2022]</code>
 
 ## 2025-07
 
