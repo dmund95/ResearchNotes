@@ -5,7 +5,7 @@ title: Research Notes
 
 # Research Notes
 
-This repository/wesbite contains my paper reading notes on research in AI. It is inspired by [Patrick Langechuan Liu]({{https://patrick-llgc.github.io/Learning-Deep-Learning/}})
+This repository/website contains my paper reading notes on research in AI. It is inspired by [Patrick Langechuan Liu](https://patrick-llgc.github.io/Learning-Deep-Learning)
 
 ## About me
 
@@ -18,6 +18,8 @@ My name is Divyanshu Mund. I'm documenting my journey through research papers in
 * PinFM [Notes]({{ site.baseurl }}/papers/PinFM/) <code>[arXiv] [Pinterest] [2025]</code>
 
 * PinnerFormer [Notes]({{ site.baseurl }}/papers/PinnerFormer/) <code>[arXiv] [Pinterest] [2022]</code>
+
+* DV365 [Notes]({{ site.baseurl }}/papers/dv365/) <code>[arXiv] [Instagram] [2025]</code>
 
 ## 2025-07
 
